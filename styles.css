@@ -1,0 +1,366 @@
+#title {
+	width:35vw;
+	display:block;
+    margin: auto;
+}
+
+body {
+	background-color:var(--darker-grey);
+}
+
+p {
+	font-family:Helvetica;
+}
+
+
+h1 {
+	text-align:center;
+	color:blue;
+}
+
+h2 {
+	text-align:center;
+	color:black;
+}
+
+h3 {
+	text-align:center;
+	color:black;
+}
+
+.heading1 {
+	display:block;
+	margin: auto;
+	height: 25px;
+	margin-bottom: 10px;
+}
+
+hr {
+	margin-top: 20px;
+}
+
+.center { /* for images */
+ width:80%;
+ display:block;
+ margin: auto;
+}
+
+figcaption {
+	text-align:center;
+	font-style:italic;
+}
+
+.small-img { /* for smaller images and gifs */
+width:20%;
+display:block;
+margin:auto;
+}
+
+.img2 {
+	width:100%;
+	display:block;
+	margin:auto;
+}
+
+.medium-img {
+	width:40%;
+	display:block;
+	margin:auto;
+}
+
+#spectre-gif {
+	filter:grayscale(100%);
+	opacity:0.1;
+}
+
+.search-bar {
+text-align:center;
+}
+
+.surprise-me {
+text-align:center;
+margin:5px;	
+}
+
+.flip {
+transform:scaleX(-1);	
+}
+
+.inline-small-img {
+	width:35px;
+	
+}
+
+/*nav bar for the wiki */
+
+.wiki-nav ul {
+list-style-type:none;
+text-align:center;
+padding:0;
+}
+
+.wiki-nav li a { 
+	display:inline-block;
+	padding-top: 3px;
+	padding-bottom:3px;
+	width:30%;
+	margin:20px;
+    
+
+	text-decoration: none; /* no underline */
+	text-align:center;
+	font-size:1.1em;
+
+  border: 3px solid transparent;
+  
+  	  background: 
+    linear-gradient(#00000000, var(--red)) padding-box; /*this is your grey background*/
+	
+}
+
+.wiki-nav li a:not(.active) { /* default setting */
+	color:white;
+}
+
+.active {
+	color:red;
+}
+
+.wiki-nav li a:hover {
+  	  background: 
+    linear-gradient(#00000000, red) padding-box; /*this is your grey background*/
+
+	text-shadow:0px 1px black;
+}
+
+.doom-background {
+	background-image:url("./assets/doom-background.png");
+	border:3px solid;
+	padding:10px;
+}
+
+.doom-background p, .doom-background li {
+	color:white;
+	text-shadow:1px 1px black;
+}
+
+.doom-background a {
+	color:var(--red);
+}
+
+.doom-background a:visited {
+	color:var(--darkred); /* dark red */
+}
+
+.doom-background a:hover {
+	color:var(--lightred); /* light blue */
+}
+
+/* nav bar proper */
+
+.navigation ul {
+list-style-type:none; /*no more bullet points */
+display:flex;
+justify-content: center;
+padding:0;
+
+margin-left:20%; /* centers the bar */
+margin-right:20%; /* centers the bar */
+
+/*	overflow:auto; /* the navbar is on its own line */
+/*	margin:0; /* no clue what this does, but its some browser default setting*/
+/*	padding:0; /*removes the default setting and makes it stick to the left (no more padding) */
+	
+}
+
+.navigation li {
+/* width: 25%; /* there are 4 links so 100/4 is 25 */
+	
+padding:2px;
+width:25%;
+}
+
+.navigation li a { 
+	display:inline-block;
+	padding-top: 5px;
+	padding-bottom:5px;
+	width:96.5%;
+
+	text-decoration: none; /* no underline */
+	text-align:center;
+	font-size:1.1em;
+
+  border: 3px solid transparent;
+  border-radius: 8px;
+  
+  	  background: 
+    linear-gradient(grey, white) padding-box, /*this is your grey background*/
+    linear-gradient(white,grey) border-box;
+	
+}
+
+.navigation li a:not(.active) { /* default setting */
+	color:black;
+}
+
+.active {
+	color:red;
+}
+
+.navigation li a:hover {
+	background: 
+    linear-gradient(var(--dark-grey), var(--dark-white)) padding-box, /*this is your grey background*/
+    linear-gradient(var(--dark-white), var(--dark-grey)) border-box;
+	color:var(--darker-grey);
+	text-shadow:0px 1px grey;
+}
+
+.center-div {
+	margin:auto;
+	padding:0px;
+	width:90%;
+	text-align:center;
+}
+
+.scroll {
+margin:30px auto;
+padding-left:50px;
+padding-right:50px;
+padding-top:20px;
+padding-bottom:20px;
+width:550px;
+height:650px;
+
+overflow:scroll;
+
+background-image:linear-gradient(grey, var(--dark-white));
+border:solid 5px;
+border-color:var(--soulsphere);
+
+}	
+
+footer {
+	background-image:linear-gradient(black, var(--darker-grey));
+	color:white;
+	text-align:center;
+	width: 500px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:480px) {
+	
+	#title {
+		width:100%;
+	}
+	
+	.long {
+		width:100%;
+	}
+
+	.scroll {
+margin:auto;
+padding:10px;
+width:410px;
+height:auto;
+overflow:hidden;
+border:none;
+background-image:linear-gradient(var(--dark-white), var(--dark-white));
+	}
+	
+	
+    .navigation ul {
+		
+display:flex;
+justify-content: center;
+margin:auto;
+width:100%;
+overflow:auto;
+
+/*	overflow:auto; /* the navbar is on its own line */
+/*	margin:0; /* no clue what this does, but its some browser default setting*/
+/*	padding:0; /*removes the default setting and makes it stick to the left (no more padding) */
+		
+	}
+	
+
+	.navigation li a { 
+	display:inline-block;
+	padding-top: 5px;
+	padding-bottom:5px;
+	width:90%;
+		font-size:1em;
+	}
+	
+	.navigation li {
+/* width: 14%; /* there are 7 links so 100/7 is 14 */
+margin:auto;	
+width:33%;
+}
+	
+	footer {
+	text-align:center;
+	width: 410px;
+	padding:10px;
+	margin: 0 auto;
+}
+	
+}
+
+
+
+
+
+
+
+
+a {
+	color:#1a1aff; /* blue */
+}
+
+a:visited {
+	color:#000099; /* dark blue */
+}
+
+a:hover {
+	color:#b3e0ff; /* light blue */
+}
+
+.secret, .secret:hover {
+	color:black;
+	text-decoration:none;
+}
+
+/* COLORS */
+
+:root {
+
+	--dark-grey:#595959;
+	--dark-white:#e6e6e6;
+	--darker-grey:#1a1a1a;
+	
+	
+	--soulsphere:#0000cc; /* blue */
+	--invulnerability:#009900; /*green */
+	--megasphere:#ffcc66; /* beige */
+	
+	--red:#e60000;
+	--darkred:#990000;
+	--lightred:#ff6666;
+}
+
+/* cabazon */
+
+.note {
+	border:  1px solid black;
+}
+
+
+
