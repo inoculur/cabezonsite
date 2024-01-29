@@ -4,6 +4,10 @@
     margin: auto;
 }
 
+#new {
+	border:3px solid yellow;
+}
+
 body {
 	background-color:var(--darker-grey);
 }
