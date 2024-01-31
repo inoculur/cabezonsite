@@ -49,9 +49,12 @@ hr {
  margin: auto;
 }
 
+figure {
+	text-align:center;
+}
+
 figcaption {
 	text-align:center;
-	font-style:italic;
 }
 
 .small-img { /* for smaller images and gifs */
@@ -178,10 +181,10 @@ margin-right:20%; /* centers the bar */
 }
 
 .navigation li {
-/* width: 25%; /* there are 4 links so 100/4 is 25 */
+/* width: 20%; /* there are 5 links so 100/4 is 20 */
 	
 padding:2px;
-width:25%;
+width:12%;
 }
 
 .navigation li a { 
@@ -306,7 +309,7 @@ overflow:auto;
 	.navigation li {
 /* width: 14%; /* there are 7 links so 100/7 is 14 */
 margin:auto;	
-width:33%;
+width:30%;
 }
 	
 	footer {
@@ -334,7 +337,7 @@ a:visited {
 }
 
 a:hover {
-	color:#b3e0ff; /* light blue */
+	color:#007acc; /* light blue */
 }
 
 .secret, .secret:hover {
