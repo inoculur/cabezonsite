@@ -6,13 +6,27 @@
 
 #new {
 	border:3px solid yellow;
+	padding:10px;
+	box-shadow:0px 0px 10px yellow;
 }
+
+.note {
+	padding:10px;
+	box-shadow:5px 5px 5px black;
+}
+
+.index {
+	border: 2px solid transparent;
+	margin:20px;
+	box-shadow: 0px 0px 30px black;
+}
+
 
 body {
 	background-color:var(--darker-grey);
 }
 
-p {
+p, h1, h2, h3, figcaption, li, div {
 	font-family:Helvetica;
 }
 
@@ -43,11 +57,6 @@ hr {
 	margin-top: 20px;
 }
 
-.center { /* for images */
- width:80%;
- display:block;
- margin: auto;
-}
 
 figure {
 	text-align:center;
@@ -57,23 +66,7 @@ figcaption {
 	text-align:center;
 }
 
-.small-img { /* for smaller images and gifs */
-width:20%;
-display:block;
-margin:auto;
-}
 
-.img2 {
-	width:100%;
-	display:block;
-	margin:auto;
-}
-
-.medium-img {
-	width:40%;
-	display:block;
-	margin:auto;
-}
 
 #spectre-gif {
 	filter:grayscale(100%);
@@ -318,6 +311,17 @@ width:30%;
 	padding:10px;
 	margin: 0 auto;
 }
+
+img {
+	text-align: center;
+	margin: auto;
+	width: 90%;
+}
+
+figure {
+	margin:auto;
+}
+
 	
 }
 
@@ -363,11 +367,31 @@ a:hover {
 	--lightred:#ff6666;
 }
 
-/* cabazon */
+/* cabezon */
 
 .note {
 	border:  1px solid black;
 }
 
 
+
+/* DISCARDED */
+
+/* .small-img { /* for smaller images and gifs
+width:20%;
+display:block;
+margin:auto;
+}
+
+.img2 {
+	width:100%;
+	display:block;
+	margin:auto;
+}
+
+.medium-img {
+	width:40%;
+	display:block;
+	margin:auto;
+}
 
